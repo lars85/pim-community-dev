@@ -23,10 +23,10 @@ class AbstractEntityWithValuesQueryBuilder implements ProductQueryBuilderInterfa
     /** @var mixed */
     protected $qb;
 
-    /** FilterRegistryInterface */
+    /** @var FilterRegistryInterface */
     protected $filterRegistry;
 
-    /** SorterRegistryInterface */
+    /** @var SorterRegistryInterface */
     protected $sorterRegistry;
 
     /** @var array */
