@@ -23,10 +23,7 @@ Feature: Delete a family
     And I am on the families grid
     When I click on the "Delete" action of the row which contains "Boots"
     And I confirm the deletion
-    Then I should see a dialog with the following content:
-      | title        | content                                                                |
-      | Delete Error | Can not remove family "boots" because it is linked to family variants. |
-    When I press the "OK" button
+    Then I should see the flash message "Can not remove family "boots" because it is linked to family variants."
     Then I should be on the families page
     And I should see family Boots
 
